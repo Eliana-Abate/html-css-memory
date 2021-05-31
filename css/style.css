@@ -40,11 +40,6 @@ main {
     height: 200px;
 }
 
-.img-hidden {
-    width: calc(1000px/4 - 80px);
-    height: 100%;
-}
-
 .cards {
     width: calc(1000px/4 - 80px);
     height: 100%;
@@ -58,16 +53,26 @@ main {
     box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
 }
 
-
 .row .cards:last-child {
     margin-right: 0;
 }
 
 .effetto {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: white;
     visibility: hidden;
 }
 
+.img-hidden {
+    width: 70%;
+    height: 70%;
+    padding: 20px;
+    border-radius: 10px;
+}
+
 .cards:hover .effetto {
-visibility: visible;
+    visibility: visible;
 }
 
