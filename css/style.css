@@ -29,7 +29,7 @@ header {
 
 /*MAIN STYLE*/ 
 main {
-    max-width: 1000px;
+    width: 1000px;
     height: 690px;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -38,6 +38,11 @@ main {
 .row {
     margin-bottom: 30px;
     height: 200px;
+}
+
+.img-hidden {
+    width: calc(1000px/4 - 80px);
+    height: 100%;
 }
 
 .cards {
@@ -53,6 +58,16 @@ main {
     box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
 }
 
+
 .row .cards:last-child {
     margin-right: 0;
 }
+
+.effetto {
+    visibility: hidden;
+}
+
+.cards:hover .effetto {
+visibility: visible;
+}
+
