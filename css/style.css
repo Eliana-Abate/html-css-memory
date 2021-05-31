@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+.clearfix {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 
 /*BODY STYLE*/
 body {
@@ -11,9 +17,42 @@ body {
     font-family: 'Nerko One', cursive;
 }
 
+
+/*HEADER STYLE*/
 header {
     height: 100px;
     color:white;
     font-size: 70px;
     text-align: center;
+}
+
+
+/*MAIN STYLE*/ 
+main {
+    max-width: 1000px;
+    height: 690px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.row {
+    margin-bottom: 30px;
+    height: 200px;
+}
+
+.cards {
+    width: calc(1000px/4 - 80px);
+    height: 100%;
+    margin-right: 20px;
+    border-radius: 10px;
+    background-image: url(../img/pattern.png);
+    background-size: contain;
+    background-position: center;
+    background-attachment: scroll;
+    float: left;
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
+}
+
+.row .cards:last-child {
+    margin-right: 0;
 }
